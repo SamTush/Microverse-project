@@ -1,28 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Fork Me! FCC: Test Suite Template</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <body class="body-color">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <!--  -->
+        <header id="header" class="mb-3">
+            <nav id="nav-bar" class="navbar navbar-expand-lg p-3 body-color fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img id="header-img" src="./product-landing-page-logo.png" width="300px" alt="logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-6" href="#featers">Features</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a class="nav-link text-dark fs-6" href="#how-it-works">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-6" href="#pricing"> Pricing </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--  -->
+        <section class="my-5 pt-5">
+            <div class="d-flex align-items-center flex-column">
+                <h1 class="fs-4 fw-bold mb-3">Handcrafted, home-made masterpieces</h1>
+                <form action="https://www.freecodecamp.com/email-submit" method="post" id="form" class="d-flex align-items-center flex-column" >
+                    <div class="mb-3">
+                        <input type="email" name="email" required id="email" class="form-control" placeholder="name@example.com" />
+                    </div>
+                    <input id="submit" type="submit" class="btn btn-warning fw-bold" />
+                </form>
+            </div>
+        </section>
+        <!--  -->
+        <section class="p-5 mb-5 w-75 mx-auto" id="featers">
+            <div class="d-flex icon-color align-items-center display-3">
+                <div class="me-5">
+                    <i class="bi bi-fire"></i>
+                </div>
+                <div class="d-flex flex-column text-dark">
+                    <span class="fw-bold fs-3">Premium Materials</span>
+                    <span class="fs-6">
+                        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+                    </span>
+                </div>
+            </div>
+            <!--  -->
 
-    <!--
+            <div class="d-flex icon-color align-items-center display-3 my-5">
+                <div class="me-5">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <div class="d-flex flex-column text-dark">
+                    <span class="fw-bold fs-3"> Fast Shipping</span>
+                    <span class="fs-6">
+                        We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you
+                        are not satisfied.
+                    </span>
+                </div>
+            </div>
 
-    Hello Camper!
+            <!--  -->
+            <div class="d-flex icon-color align-items-center display-3">
+                <div class="me-5">
+                    <i class="bi bi-battery-full"></i>
+                </div>
+                <div class="d-flex flex-column text-dark">
+                    <span class="fw-bold fs-3"> Quality Assurance</span>
+                    <span class="fs-6">
+                        For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of
+                        your instrument.
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!--  -->
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-
-    <h1>Hello World, we are software developers!</h1>
-    <script  src="js/index.js"></script>
-  </body>
+        <section class="d-flex justify-content-center mb-5" id="how-it-works">
+            <iframe id="video" width="712" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"> </iframe>
+        </section>
+        <!--  -->
+        <section class="mb-5" id="pricing">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="card w-100 border-dark bg-transparent">
+                            <div class="card-header border-0 fs-5 fw-bold">TENOR TROMBONE</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold fs-4 mb-3">$600</h5>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum dolor.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <button type="button" class="btn btn-warning mt-3">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card w-100 border-dark bg-transparent">
+                            <div class="card-header border-0 fs-5 fw-bold">BASS TROMBONE</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold fs-4 mb-3">$900</h5>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum dolor.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <button type="button" class="btn btn-warning mt-3">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card w-100 border-dark bg-transparent">
+                            <div class="card-header border-0 fs-5 fw-bold">VALVE TROMBONE</div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold fs-4 mb-3">$1200</h5>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <p class="card-text">Lorem ipsum dolor.</p>
+                                <p class="card-text">Lorem ipsum.</p>
+                                <button type="button" class="btn btn-warning mt-3">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <footer>
+            <div class="container footer-color px-3 py-1">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+                <p class="text-dark text-end fs-6">Copyright 2016, Original Trombones</p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
 </html>
